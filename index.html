@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الطيران</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>موقع الطيران</h1>
+        <p>ابحث عن أفضل الأسعار والمواعيد للرحلات</p>
+    </header>
+
+    <section id="search">
+        <form id="flight-search-form">
+            <label for="from">من:</label>
+            <input type="text" id="from" name="from" required>
+
+            <label for="to">إلى:</label>
+            <input type="text" id="to" name="to" required>
+
+            <label for="date">تاريخ الرحلة:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="button" onclick="searchFlights()">ابحث عن الرحلة</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>نتائج البحث:</h2>
+        <div id="flight-results"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
